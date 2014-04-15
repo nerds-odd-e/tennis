@@ -8,6 +8,23 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Love All"
-            />
+            android:textSize="32dp" android:layout_gravity="center"
+            android:singleLine="true" android:gravity="center"/>
+    <GridLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:columnCount="2" android:rowCount="1" android:clickable="true"
+            >
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player1 Scores"
+                android:id="@+id/player1_scores" android:layout_row="0" android:layout_column="0"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player2 Scores"
+                android:id="@+id/player2_scores" android:layout_row="0" android:layout_column="1"
+                android:layout_gravity="right"/>
+    </GridLayout>
 </LinearLayout>
 
