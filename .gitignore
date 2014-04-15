@@ -3,3 +3,5 @@ gen/
 .idea/
 test_servers/
 out/
+.irb-history
+*.png
