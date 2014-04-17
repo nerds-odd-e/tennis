@@ -2,9 +2,8 @@ Feature: Referee feature
   Scenario: I can get the current score when players score
     Given The tennis game starts
     Then I see the score "Love All"
-    When player 1 scores
-    And player 2 scores
-    And player 1 scores
+    When player1 scores 2 times
+    And player2 scores 1 times
     Then I see the score "Thirty Fifteen"
 
   Scenario: Deuce when both players score same greater than 40
