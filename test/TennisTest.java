@@ -15,6 +15,12 @@ public class TennisTest {
     public void fifteen_love_after_player1_scores() throws Exception {
         game.player1Score();
         assertEquals("Fifteen Love", game.getScore());
+    }
 
+    @Test
+    public void Thirty_love_after_player1_scores_twice() throws Exception {
+        game.player1Score();
+        game.player1Score();
+        assertEquals("Thirty Love", game.getScore());
     }
 }
