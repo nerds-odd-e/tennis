@@ -1,5 +1,4 @@
 Feature: Referee feature
-  @ignore
   Scenario: I can get the current score when players score
     Given The tennis game starts
     Then I see the score "Love All"

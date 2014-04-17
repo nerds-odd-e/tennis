@@ -26,4 +26,9 @@ public class Referee extends Activity {
         game.player1Score();
         displayScore();
     }
+
+    public void player2Score(View view){
+        game.player2Score();
+        displayScore();
+    }
 }
