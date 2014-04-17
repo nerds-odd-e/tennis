@@ -29,6 +29,12 @@ public class TennisTest {
         assertEquals("Forty Love", game.getScore());
     }
 
+    @Test
+    public void love_fifteen_after_player2_scores() throws Exception {
+        game.player2Score();
+        assertEquals("Love Fifteen", game.getScore());
+    }
+
     private void player1Score(int times){
         for(int n = 0; n < times; n++){
             game.player1Score();
