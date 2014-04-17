@@ -6,9 +6,15 @@ public class Tennis {
     private int scoreOfPlayer2;
 
     public String getScore() {
+        if (isDeuce())
+            return "Deuce";
         if (isDraw())
             return drawScore();
         return normalScore();
+    }
+
+    private boolean isDeuce() {
+        return isDraw() && scoreOfPlayer1 == 3;
     }
 
     private String normalScore() {

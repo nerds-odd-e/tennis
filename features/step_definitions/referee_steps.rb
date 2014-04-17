@@ -12,3 +12,11 @@ end
 When(/^player 2 scores$/) do
   touch "button id:'player2_scores'"
 end
+
+When(/^player1 scores (\d+) times$/) do |times|
+  times.to_i.times {touch "button id:'player1_scores'"}
+end
+
+When(/^player2 scores (\d+) times$/) do |times|
+  times.to_i.times {touch "button id:'player2_scores'"}
+end
