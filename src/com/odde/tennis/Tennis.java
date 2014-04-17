@@ -14,7 +14,7 @@ public class Tennis {
     }
 
     private boolean isDeuce() {
-        return isDraw() && scoreOfPlayer1 == 3;
+        return isDraw() && scoreOfPlayer1 >= 3;
     }
 
     private String normalScore() {

@@ -48,6 +48,14 @@ public class TennisTest {
         assertEquals("Deuce", game.getScore());
     }
 
+    @Test
+    public void deuce_when_both_players_score_after_deuce() throws Exception {
+        deuce();
+        player1Score(1);
+        player2Score(1);
+        assertEquals("Deuce", game.getScore());
+    }
+
     private void deuce() {
         player1Score(3);
         player2Score(3);
