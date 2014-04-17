@@ -35,6 +35,13 @@ public class TennisTest {
         assertEquals("Love Fifteen", game.getScore());
     }
 
+    @Test
+    public void fifteen_all_when_both_players_score() throws Exception {
+        game.player1Score();
+        game.player2Score();
+        assertEquals("Fifteen All", game.getScore());
+    }
+
     private void player1Score(int times){
         for(int n = 0; n < times; n++){
             game.player1Score();

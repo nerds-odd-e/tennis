@@ -6,9 +6,21 @@ public class Tennis {
     private int scoreOfPlayer2;
 
     public String getScore() {
-        if (scoreOfPlayer2 == 1 || scoreOfPlayer1 > 0)
-            return SCORES[scoreOfPlayer1] + " " + SCORES[scoreOfPlayer2];
-        return SCORES[0] + " All";
+        if (isDraw())
+            return drawScore();
+        return normalScore();
+    }
+
+    private String normalScore() {
+        return SCORES[scoreOfPlayer1] + " " + SCORES[scoreOfPlayer2];
+    }
+
+    private String drawScore() {
+        return SCORES[scoreOfPlayer1] + " All";
+    }
+
+    private boolean isDraw() {
+        return scoreOfPlayer1 == scoreOfPlayer2;
     }
 
     public void player1Score() {
