@@ -9,6 +9,7 @@
             android:layout_height="wrap_content"
             android:text="Love All"
             android:textSize="32dp" android:layout_gravity="center"
+            android:id="@+id/score"
             android:singleLine="true" android:gravity="center"/>
     <GridLayout
             android:layout_width="fill_parent"
