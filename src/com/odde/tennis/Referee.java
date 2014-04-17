@@ -15,11 +15,15 @@ public class Referee extends Activity {
         setContentView(R.layout.main);
 
         score = (TextView)findViewById(R.id.score);
+        displayScore();
+    }
+
+    private void displayScore() {
         score.setText(game.getScore());
     }
 
     public void player1Score(View view){
         game.player1Score();
-        score.setText(game.getScore());
+        displayScore();
     }
 }
